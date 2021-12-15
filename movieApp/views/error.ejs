@@ -1,0 +1,24 @@
+<%- include("partials/header") -%>
+<body class="d-flex h-100 text-center text-white bg-dark">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">MovieX</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link" aria-current="page" href="/home">Home</a>
+        <a class="nav-link" href="https://github.com/ysfogtlu">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="px-3">
+    <h2>Sorry, we couldn't find what you were looking for.</h2><br>
+    <h4>Please be sure you typed it correctly.</h4>
+    <form class="item" action="/" method="post">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" name="movieName" placeholder="Movie">
+        <button type="submit" class="btn btn-outline fw-bold border-white bg-white" name="button">Search</button>
+      </div>
+    </form>
+  </main>
+  <%- include("partials/footer") -%>

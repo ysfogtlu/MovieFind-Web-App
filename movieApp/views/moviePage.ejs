@@ -1,0 +1,33 @@
+<%- include("partials/header") -%>
+<body class="text-white bg-dark">
+
+<div class="card mb-3 bg-dark">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="<%= moviePoster %>" class="card-img" alt=" <%= movieName %>">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title"> <%= movieName %> </h4>
+        <p class="card-text"> Released: <%= movieYear %> </p>
+        <p class="card-text"> Genre: <%= movieGenre %></p>
+        <p class="card-text"> Director: <%= movieDirector %></p>
+        <p class="card-text"> Writer: <%= movieWriter %></p>
+        <p class="card-text"> Actors: <%= movieActors %></p>
+        <p class="card-text"> Plot: <%= moviePlot %></p>
+        <p class="card-text"> Language: <%= movieLanguage %></p>
+        <p class="card-text"> Country: <%= movieCountry %></p>
+        <p class="card-text"> Awards: <%= movieAwards %></p>
+        <p class="card-text"> IMBD Rating: <%= imbdRating %></p>
+        <form action="/back" method="post">
+          <button type="submit" class="btn btn-outline fw-bold border-white bg-white" name="button">Search Another Movie</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

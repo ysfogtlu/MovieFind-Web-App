@@ -1,0 +1,24 @@
+<%- include("partials/header") -%>
+<body class="d-flex h-100 text-center text-white bg-dark">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">MovieX</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link active" aria-current="page" href="/home">Home</a>
+        <a class="nav-link" href="https://www.linkedin.com/in/yusuf-%C3%B6%C4%9F%C3%BCtl%C3%BC-144807196/">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="px-3">
+    <h1>Search a movie or series</h1>
+    <p class="lead">You can easily access the details of the movies or TV series you want to watch.</p>
+    <form class="item" action="/" method="post">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" name="movieName" placeholder="Movie">
+        <button type="submit" class="btn btn-outline fw-bold border-white bg-white" name="button">Search</button>
+      </div>
+    </form>
+  </main>
+  <%- include("partials/footer") -%>
